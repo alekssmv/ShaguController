@@ -141,30 +141,25 @@ ui.manage_button = function(self, frame, pos, x, y, image, bonus)
 end
 
 local buttonmap = {
-   -- A button
-   { 7, "BOTTOMRIGHT", -220,  45, "Interface\\AddOns\\ShaguController\\img\\a" },
-
    -- right controls
-   { 1, "BOTTOMRIGHT", -220, 135, "Interface\\AddOns\\ShaguController\\img\\y" },
+   { 1, "BOTTOMRIGHT", -220,  45, "Interface\\AddOns\\ShaguController\\img\\a" },
    { 2, "BOTTOMRIGHT", -265,  90, "Interface\\AddOns\\ShaguController\\img\\x" },
-   { 3, "BOTTOMRIGHT", -175,  90, "Interface\\AddOns\\ShaguController\\img\\b" },
-   { 4, "BOTTOMRIGHT", -220,  90, "" },
+   { 3, "BOTTOMRIGHT", -220, 135, "Interface\\AddOns\\ShaguController\\img\\y" },
+   { 4, "BOTTOMRIGHT", -175,  90, "Interface\\AddOns\\ShaguController\\img\\b" },
 
    -- left controls
-   { 5, "BOTTOMLEFT",  220, 135, "Interface\\AddOns\\ShaguController\\img\\up" },
-   { 6, "BOTTOMLEFT",  220,  90, "" },
+   { 5, "BOTTOMLEFT", 220,  45, "Interface\\AddOns\\ShaguController\\img\\down" },
+   { 6, "BOTTOMLEFT", 175,  90, "Interface\\AddOns\\ShaguController\\img\\left" },
+   { 7, "BOTTOMLEFT",  220, 135, "Interface\\AddOns\\ShaguController\\img\\up" },
+   { 8, "BOTTOMLEFT", 265,  90, "Interface\\AddOns\\ShaguController\\img\\right" },
 
-   -- This is my personal preference where the last 3 buttons of an actionbar
-   -- are usually mapped and mandatory skills for me. If you want to continue
-   -- the line, change this to 7,8,9 and change the disabled ones to 10,11,12.
-   -- also make sure to update the keybinds.lua accordingly.
-   { 10, "BOTTOMLEFT", 265,  90, "Interface\\AddOns\\ShaguController\\img\\right" },
-   { 11, "BOTTOMLEFT", 220,  45, "Interface\\AddOns\\ShaguController\\img\\down" },
-   { 12, "BOTTOMLEFT", 175,  90, "Interface\\AddOns\\ShaguController\\img\\left" },
+   -- bumpers
+   { 9, "BOTTOMRIGHT", -220,  90 },
+   { 10, "BOTTOMLEFT",  220,  90 },
 
    -- disabled
-   { 8, "DISABLED" },
-   { 9, "DISABLED" },
+   { 11, "DISABLED" },
+   { 12, "DISABLED" },
 }
 
 ui.manage_positions = function(a1, a2, a3)
