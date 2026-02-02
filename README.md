@@ -1,2 +1,2 @@
-- autobinding is disabled
+- key autobinding is disabled
 - the A button is assignable, not just for jumping
