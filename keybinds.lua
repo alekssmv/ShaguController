@@ -17,7 +17,7 @@ keybinds:SetScript("OnEvent", function()
     SetBinding("F", "ACTIONBUTTON1")                    -- Y
     SetBinding("R", "ACTIONBUTTON2")                    -- X
     SetBinding("E", "ACTIONBUTTON3")                    -- B
-    -- Jump                                             -- A
+    SetBinding("T", "ACTIONBUTTON7")                    -- A
     SetBinding("UP", "ACTIONBUTTON5")                   -- Arrow-Up
     SetBinding("RIGHT", "ACTIONBUTTON10")               -- Arrow-Right
     SetBinding("DOWN", "ACTIONBUTTON11")                -- Arrow-Down
